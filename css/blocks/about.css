@@ -1,0 +1,136 @@
+.about__top {
+	background: url("/img/content/comp.jpg") center/cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	padding-block: 50px;
+	position: relative;
+	z-index: var(--layer-1);
+}
+
+.about__top::before {
+	display: block;
+	content: "";
+	background: var(--main-glow-color);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: var(--layer-negative);
+}
+
+.about__title {
+	font-size: 25px;
+	text-align: center;
+}
+
+.about__list {
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+.about__item {
+	position: relative;
+}
+
+.about__item::before {
+	position: absolute;
+	content: "✓";
+	color: var(--main-color);
+	display: inline-block;
+	margin-left: -15px;
+}
+
+.about__bottom {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding-block: 50px;
+	gap: 30px;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.description__title {
+	text-align: center;
+}
+
+.description__text {
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.about-slider {
+	display: flex;
+	min-width: 0;
+	max-height: 350px;
+}
+
+.about-slider__slide {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.about-slider.swiper {
+	margin: 0;
+}
+
+.about__pagination {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.about__pagination .swiper-pagination-bullet {
+	font-size: 20px;
+}
+
+.about__pagination .swiper-pagination-bullet-active {
+	background-color: transparent;
+	font-size: 15px;
+	color: var(--accent-color);
+}
+
+.about__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+	> span.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	background: var(--main-color);
+}
+
+@media (width <= 992px) {
+	.about__bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.description {
+		max-width: 80%;
+	}
+
+	.slider {
+		max-width: 50%;
+	}
+}
+
+@media (width <= 768px) {
+		.slider {
+		max-width: 70%;
+	}
+}

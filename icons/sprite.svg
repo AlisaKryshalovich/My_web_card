@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="burger" viewBox="0 0 20 20" fill="none">
+    <path d="M21 12H9M21 18H7M21 6H3" stroke="#FFF" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
+  <symbol id="cross" viewBox="0 0 20 20" fill="none">
+    <path d="M18 6L6 18M6 6L18 18" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+</svg>
