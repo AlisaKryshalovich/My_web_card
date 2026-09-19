@@ -1,5 +1,5 @@
 .about__top {
-	background: url("/img/content/comp.jpg") center/cover no-repeat;
+	background: url("../../img/content/comp.jpg") center/cover no-repeat;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
